@@ -1,0 +1,15 @@
+<{include file="db:addresses_header.html"}>
+<div class="outer">
+<{foreachq item=votedata from=$votedatas}>
+    <div class = "<{cycle values = "even,odd"}>">
+<{$votedata.votedata_rid}>;
+	<{$votedata.votedata_aid}>;
+	<{$votedata.votedata_ruser}>;
+	<{$votedata.votedata_rating}>;
+	<{$votedata.votedata_rhostname}>;
+	<{$votedata.votedata_rtimestamp}>;
+	</div>
+    <br />
+<{/foreach}>
+</div>
+<{include file="db:addresses_footer.html"}>

@@ -1,0 +1,12 @@
+	
+<table class="outer">
+	<{foreachq item=addr from=$block}>
+		<tr class = "<{cycle values = "even,odd"}>">
+			<td><{$addr.addr_id}>;
+					<{$addr.addr_cid}>;
+					<{$addr.addr_title}>;
+					</td>
+		</tr>
+	<{/foreach}>
+</table>
+	

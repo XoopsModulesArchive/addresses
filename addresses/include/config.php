@@ -27,27 +27,16 @@
  *  Version : 1.73 Tue 2012/06/26 13:30:40 : Timgno Exp $
  * ****************************************************************************
  */
-include "admin_header.php";
-	//count "total broken"
-	$count_broken = $brokenHandler->getCount();
-	//count "total cat"
-	$count_cat = $catHandler->getCount();
-	//count "total addr"
-	$count_addr = $addrHandler->getCount();
-	//count "total votedata"
-	$count_votedata = $votedataHandler->getCount();
-	// InfoBox votedata
-  	$adminMenu->addInfoBox(_AM_ADDRESSES_STATISTICS);
-	// InfoBox broken
-	$adminMenu->addInfoBoxLine(_AM_ADDRESSES_STATISTICS,_AM_ADDRESSES_THEREARE_BROKEN, $count_broken); 
-	// InfoBox cat
-	$adminMenu->addInfoBoxLine(_AM_ADDRESSES_STATISTICS,_AM_ADDRESSES_THEREARE_CAT, $count_cat); 
-	// InfoBox addr
-	$adminMenu->addInfoBoxLine(_AM_ADDRESSES_STATISTICS,_AM_ADDRESSES_THEREARE_ADDR, $count_addr); 
-	// InfoBox votedata
-	$adminMenu->addInfoBoxLine(_AM_ADDRESSES_STATISTICS,_AM_ADDRESSES_THEREARE_VOTEDATA, $count_votedata); 
-    // Render Index
-    echo $adminMenu->addNavigation("index.php");
-    echo $adminMenu->renderIndex();
-include "admin_footer.php";
+
+if( ! defined( 'XOOPS_ROOT_PATH' ) ) exit ;
+if (!defined('addresses_MODULE_PATH')) {
+define("ADDRESSES_DIRNAME", "addresses");
+define("ADDRESSES_PATH", XOOPS_ROOT_PATH."/modules/".ADDRESSES_DIRNAME);
+define("ADDRESSES_URL", XOOPS_URL."/modules/".ADDRESSES_DIRNAME);
+define("ADDRESSES_ADMIN", ADDRESSES_URL . "/admin/index.php");
+define("ADDRESSES_AUTHOR_LOGOIMG", ADDRESSES_URL . "/images/txmodxoops(timgno)_logo.png"); 
+}
+// module information
+$mod_copyright = "<a href='' title='' target='_blank'>
+                     <img src='".ADDRESSES_AUTHOR_LOGOIMG."' alt='TXMod Xoops (Timgno)' /></a>";
 ?>

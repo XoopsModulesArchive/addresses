@@ -1,0 +1,13 @@
+<{include file="db:addresses_header.html"}>
+<div class="outer">
+<{foreachq item=broken from=$brokens}>
+    <div class = "<{cycle values = "even,odd"}>">
+<{$broken.broken_id}>;
+	<{$broken.broken_aid}>;
+	<{$broken.broken_sender}>;
+	<{$broken.broken_ip}>;
+	</div>
+    <br />
+<{/foreach}>
+</div>
+<{include file="db:addresses_footer.html"}>

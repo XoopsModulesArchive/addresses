@@ -27,27 +27,23 @@
  *  Version : 1.73 Tue 2012/06/26 13:30:40 : Timgno Exp $
  * ****************************************************************************
  */
-include "admin_header.php";
-	//count "total broken"
-	$count_broken = $brokenHandler->getCount();
-	//count "total cat"
-	$count_cat = $catHandler->getCount();
-	//count "total addr"
-	$count_addr = $addrHandler->getCount();
-	//count "total votedata"
-	$count_votedata = $votedataHandler->getCount();
-	// InfoBox votedata
-  	$adminMenu->addInfoBox(_AM_ADDRESSES_STATISTICS);
-	// InfoBox broken
-	$adminMenu->addInfoBoxLine(_AM_ADDRESSES_STATISTICS,_AM_ADDRESSES_THEREARE_BROKEN, $count_broken); 
-	// InfoBox cat
-	$adminMenu->addInfoBoxLine(_AM_ADDRESSES_STATISTICS,_AM_ADDRESSES_THEREARE_CAT, $count_cat); 
-	// InfoBox addr
-	$adminMenu->addInfoBoxLine(_AM_ADDRESSES_STATISTICS,_AM_ADDRESSES_THEREARE_ADDR, $count_addr); 
-	// InfoBox votedata
-	$adminMenu->addInfoBoxLine(_AM_ADDRESSES_STATISTICS,_AM_ADDRESSES_THEREARE_VOTEDATA, $count_votedata); 
-    // Render Index
-    echo $adminMenu->addNavigation("index.php");
-    echo $adminMenu->renderIndex();
-include "admin_footer.php";
+
+include_once "header.php";
+$xoopsOption['template_main'] = 'addresses_votedata.html';	
+include_once XOOPS_ROOT_PATH."/header.php";
+//keywords
+xoops_meta_keywords($GLOBALS['xoopsModuleConfig']['keywords']);
+//description
+xoops_meta_description(_MD_ADDRESSES_DESC);
+//
+$xoopsTpl->assign('xoops_mpageurl', ADDRESSES_URL."/votedata.php"); 
+$xoopsTpl->assign('addresses_url', ADDRESSES_URL);
+$xoopsTpl->assign('adv', $GLOBALS['xoopsModuleConfig']['advertise']);
+//
+$xoopsTpl->assign('barsocials', $GLOBALS['xoopsModuleConfig']['barsocials']); 
+$xoopsTpl->assign('fbcomments', $GLOBALS['xoopsModuleConfig']['fbcomments']); 
+//
+$xoopsTpl->assign('copyright', $mod_copyright);
+//
+include_once XOOPS_ROOT_PATH."/footer.php";	
 ?>

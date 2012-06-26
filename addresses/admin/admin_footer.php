@@ -27,27 +27,10 @@
  *  Version : 1.73 Tue 2012/06/26 13:30:40 : Timgno Exp $
  * ****************************************************************************
  */
-include "admin_header.php";
-	//count "total broken"
-	$count_broken = $brokenHandler->getCount();
-	//count "total cat"
-	$count_cat = $catHandler->getCount();
-	//count "total addr"
-	$count_addr = $addrHandler->getCount();
-	//count "total votedata"
-	$count_votedata = $votedataHandler->getCount();
-	// InfoBox votedata
-  	$adminMenu->addInfoBox(_AM_ADDRESSES_STATISTICS);
-	// InfoBox broken
-	$adminMenu->addInfoBoxLine(_AM_ADDRESSES_STATISTICS,_AM_ADDRESSES_THEREARE_BROKEN, $count_broken); 
-	// InfoBox cat
-	$adminMenu->addInfoBoxLine(_AM_ADDRESSES_STATISTICS,_AM_ADDRESSES_THEREARE_CAT, $count_cat); 
-	// InfoBox addr
-	$adminMenu->addInfoBoxLine(_AM_ADDRESSES_STATISTICS,_AM_ADDRESSES_THEREARE_ADDR, $count_addr); 
-	// InfoBox votedata
-	$adminMenu->addInfoBoxLine(_AM_ADDRESSES_STATISTICS,_AM_ADDRESSES_THEREARE_VOTEDATA, $count_votedata); 
-    // Render Index
-    echo $adminMenu->addNavigation("index.php");
-    echo $adminMenu->renderIndex();
-include "admin_footer.php";
-?>
+
+echo "<div align='center'><a href='http://www.xoops.org' target='_blank'>
+         <img src='".$pathIcon32."/xoopsmicrobutton.gif' alt='XOOPS' title='XOOPS'></a></div>";
+echo "<div class='center smallsmall italic pad5'>
+          <strong>" . $xoopsModule->getVar('name') . "</strong> "._AM_ADDRESSES_MAINTAINEDBY."
+            <a href='http://www.txmodxoops.org/modules/newbb' title='Visit TXMod Xoops Community' class='tooltip' rel='external'>TXMod Xoops Community</a></div>";
+xoops_cp_footer();  

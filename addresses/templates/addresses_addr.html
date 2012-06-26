@@ -1,0 +1,34 @@
+<{include file="db:addresses_header.html"}>
+<div class="outer">
+<{foreachq item=addr from=$addrs}>
+    <div class = "<{cycle values = "even,odd"}>">
+<{$addr.addr_id}>;
+	<{$addr.addr_cid}>;
+	<{$addr.addr_title}>;
+	<{$addr.addr_description}>;
+	<{$addr.addr_url}>;
+	<{$addr.addr_address}>;
+	<{$addr.addr_zip}>;
+	<{$addr.addr_city}>;
+	<{$addr.addr_country}>;
+	<{$addr.addr_long}>;
+	<{$addr.addr_lat}>;
+	<{$addr.addr_zoom}>;
+	<{$addr.addr_phone}>;
+	<{$addr.addr_mobile}>;
+	<{$addr.addr_fax}>;
+	<{$addr.addr_contemail}>;
+	<{$addr.addr_opentime}>;
+	<{$addr.addr_logourl}>;
+	<{$addr.addr_submitter}>;
+	<{$addr.addr_status}>;
+	<{$addr.addr_date}>;
+	<{$addr.addr_hits}>;
+	<{$addr.addr_rating}>;
+	<{$addr.addr_votes}>;
+	<{$addr.addr_comments}>;
+	</div>
+    <br />
+<{/foreach}>
+</div>
+<{include file="db:addresses_footer.html"}>

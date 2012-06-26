@@ -1,0 +1,15 @@
+<{include file="db:addresses_header.html"}>
+<div class="outer">
+<{foreachq item=cat from=$cats}>
+    <div class = "<{cycle values = "even,odd"}>">
+<{$cat.cat_id}>;
+	<{$cat.cat_pid}>;
+	<{$cat.cat_title}>;
+	<{$cat.cat_description}>;
+	<{$cat.cat_imgurl}>;
+	<{$cat.cat_show_map}>;
+	</div>
+    <br />
+<{/foreach}>
+</div>
+<{include file="db:addresses_footer.html"}>

@@ -1,0 +1,13 @@
+<{if $barsocials != 0}>
+<{include file="db:system_barsocials.html"}>
+<{/if}>
+<{if $fbcomments != 0}>
+<{include file="db:system_fbcomments.html"}>
+<{/if}>
+<div class="left"><{$copyright}></div>
+<{if $pagenav != ''}>
+<div class="right"><{$pagenav}> </div>
+<{/if}>
+<br /><{if $xoops_isadmin}>
+   <div class="center bold"><a href="<{$addresses_url}>/admin/index.php"><{$smarty.const._MD_ADDRESSES_ADMIN}></a></div>
+<{/if}>

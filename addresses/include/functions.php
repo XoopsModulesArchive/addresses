@@ -1,172 +1,96 @@
-<?php
-// $Id: functions.php,v 1.8 2003/02/20 12:56:52 okazu Exp $
-//  ------------------------------------------------------------------------ //
-//                XOOPS - PHP Content Management System                      //
-//                    Copyright (c) 2000 XOOPS.org                           //
-//                       <http://www.xoops.org/>                             //
-//  ------------------------------------------------------------------------ //
-//  This program is free software; you can redistribute it and/or modify     //
-//  it under the terms of the GNU General Public License as published by     //
-//  the Free Software Foundation; either version 2 of the License, or        //
-//  (at your option) any later version.                                      //
-//                                                                           //
-//  You may not change or alter any portion of this comment or credits       //
-//  of supporting developers from this source code or any supporting         //
-//  source code which is considered copyrighted (c) material of the          //
-//  original comment or credit authors.                                      //
-//                                                                           //
-//  This program is distributed in the hope that it will be useful,          //
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of           //
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the            //
-//  GNU General Public License for more details.                             //
-//                                                                           //
-//  You should have received a copy of the GNU General Public License        //
-//  along with this program; if not, write to the Free Software              //
-//  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA //
-//  ------------------------------------------------------------------------ //
-
-function newlinkgraphic($time, $status)
-	{
-	$count = 7;
-	$new = '';
-	$startdate = (time()-(86400 * $count));
-	if ($startdate < $time)
-		{
-		if($status==1)
-			{
-			$new = "&nbsp;<img src=\"".XOOPS_URL."/modules/addresses/images/newred.gif\" alt=\""._MD_NEWTHISWEEK."\" />";
-			}
-		elseif($status==2)
-			{
-			$new = "&nbsp;<img src=\"".XOOPS_URL."/modules/addresses/images/update.gif\" alt=\""._MD_UPTHISWEEK."\" />";
-			}
-		}
-	return $new;
-	}
-
-
-function popgraphic($hits)
-	{
-	global $xoopsModuleConfig;
-	if ($hits >= $xoopsModuleConfig['popular'])
-		{
-		return "&nbsp;<img src=\"".XOOPS_URL."/modules/addresses/images/pop.gif\" alt=\""._MD_POPULAR."\" />";
-		}
-	return '';
-	}
+<?php   
+/**
+ * ****************************************************************************
+ *  - A Project by Developers TEAM For Xoops - ( http://www.xoops.org )
+ * ****************************************************************************
+ *  ADDRESSES - MODULE FOR XOOPS
+ *  Copyright (c) 2007 - 2012
+ *  TXMod Xoops (Timgno) ( http://www.txmodxoops.org )
+ *  Created by TDMCreate version 1.37
+ *
+ *  You may not change or alter any portion of this comment or credits
+ *  of supporting developers from this source code or any supporting
+ *  source code which is considered copyrighted (c) material of the
+ *  original comment or credit authors.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *  ---------------------------------------------------------------------------
+ *  @copyright  TXMod Xoops (Timgno) ( http://www.txmodxoops.org )
+ *  @license    GNU GPL see License
+ *  @since      2.5.0
+ *  @package    addresses
+ *  @author     TXMod Xoops (Timgno) ( support@txmodxoops.org )
+ *
+ *  Version : 1.73 Tue 2012/06/26 13:30:40 : Timgno Exp $
+ * ****************************************************************************
+ */
 	
-	
-//Reusable Link Sorting Functions
-function convertorderbyin($orderby)
+
+/***************Blocks***************/
+function addresses_block_addCatSelect($cats) {
+	if(is_array($cats)) 
 	{
-	switch (trim($orderby))
+		$cat_sql = "(".current($cats);
+		array_shift($cats);
+		foreach($cats as $cat) 
 		{
-		case "titleA":  $orderby = "title ASC"; break;
-		case "dateA":   $orderby = "date ASC"; break;
-		case "hitsA":   $orderby = "hits ASC"; break;
-		case "ratingA": $orderby = "rating ASC"; break;
-// hack LUCIO - start
-		case "cityA":   $orderby = "city ASC"; break;
-// hack LUCIO - end
-		case "titleD":  $orderby = "title DESC"; break;
-		case"dateD":    $orderby = "date DESC"; break;
-		case "hitsD":   $orderby = "hits DESC"; break;
-		case "ratingD": $orderby = "rating DESC"; break;
-// hack LUCIO - start
-		case "cityD":   $orderby = "city DESC"; break;
-// hack LUCIO - end
-		default:        $orderby = "date DESC"; break;
+			$cat_sql .= ",".$cat;
 		}
-	return $orderby;
+		$cat_sql .= ")";
 	}
-
-
-function convertorderbytrans($orderby)
-	{
-	if ($orderby == "hits ASC")    $orderbyTrans = ""._MD_POPULARITYLTOM."";
-	if ($orderby == "hits DESC")   $orderbyTrans = ""._MD_POPULARITYMTOL."";
-	if ($orderby == "title ASC")   $orderbyTrans = ""._MD_TITLEATOZ."";
-	if ($orderby == "title DESC")  $orderbyTrans = ""._MD_TITLEZTOA."";
-	if ($orderby == "date ASC")    $orderbyTrans = ""._MD_DATEOLD."";
-	if ($orderby == "date DESC")   $orderbyTrans = ""._MD_DATENEW."";
-	if ($orderby == "rating ASC")  $orderbyTrans = ""._MD_RATINGLTOH."";
-	if ($orderby == "rating DESC") $orderbyTrans = ""._MD_RATINGHTOL."";
-// hack LUCIO - start
-	if ($orderby == "city ASC")    $orderbyTrans = ""._MD_CITYATOZ."";
-	if ($orderby == "city DESC")   $orderbyTrans = ""._MD_CITYZTOA."";
-// hack LUCIO - end
-	return $orderbyTrans;
+	return $cat_sql;
 }
 
+function addresses_checkModuleAdmin()
+{
+    if ( file_exists($GLOBALS['xoops']->path('/Frameworks/moduleclasses/moduleadmin/moduleadmin.php'))){
+        include_once $GLOBALS['xoops']->path('/Frameworks/moduleclasses/moduleadmin/moduleadmin.php');
+        return true;
+    }else{
+        echo xoops_error("Error: You don't use the Frameworks \"admin module\". Please install this Frameworks");
+        return false;
+    }
+}
 
-function convertorderbyout($orderby)
-	{
-	if ($orderby == "title ASC")   $orderby = "titleA";
-	if ($orderby == "date ASC")    $orderby = "dateA";
-	if ($orderby == "hits ASC")    $orderby = "hitsA";
-	if ($orderby == "rating ASC")  $orderby = "ratingA";
-// hack LUCIO - start
-	if ($orderby == "city ASC")    $orderby = "cityA";	
-// hack LUCIO - end
-	if ($orderby == "title DESC")  $orderby = "titleD";
-	if ($orderby == "date DESC")   $orderby = "dateD";
-	if ($orderby == "hits DESC")   $orderby = "hitsD";
-	if ($orderby == "rating DESC") $orderby = "ratingD";
-// hack LUCIO - start
-	if ($orderby == "city DESC")   $orderby = "cityD";
-// hack LUCIO - end
-	return $orderby;
+function addresses_CleanVars( &$global, $key, $default = '', $type = 'int' ) {
+    switch ( $type ) {
+        case 'string':
+            $ret = ( isset( $global[$key] ) ) ? filter_var( $global[$key], FILTER_SANITIZE_MAGIC_QUOTES ) : $default;
+            break;
+        case 'int': default:
+            $ret = ( isset( $global[$key] ) ) ? filter_var( $global[$key], FILTER_SANITIZE_NUMBER_INT ) : $default;
+            break;
+    }
+    if ( $ret === false ) {
+        return $default;
+    }
+    return $ret;
+}
+
+function xoops_meta_keywords($content)
+{
+	global $xoopsTpl, $xoTheme;
+	$myts =& MyTextSanitizer::getInstance();
+	$content= $myts->undoHtmlSpecialChars($myts->sanitizeForDisplay($content));
+	if(isset($xoTheme) && is_object($xoTheme)) {
+		$xoTheme->addMeta( 'meta', 'keywords', strip_tags($content));
+	} else {	// Compatibility for old Xoops versions
+		$xoopsTpl->assign('xoops_meta_keywords', strip_tags($content));
 	}
+}
 
-
-//updates rating data in itemtable for a given item
-function updaterating($sel_id)
-	{
-	global $xoopsDB;
-	$query = "select rating FROM ".$xoopsDB->prefix("addresses_votedata")." WHERE aid = ".$sel_id."";
-	//echo $query;
-	$voteresult = $xoopsDB->query($query);
-	$votesDB = $xoopsDB->getRowsNum($voteresult);
-	$totalrating = 0;
-	while(list($rating)=$xoopsDB->fetchRow($voteresult))
-		{
-		$totalrating += $rating;
-		}
-	$finalrating = $totalrating/$votesDB;
-	$finalrating = number_format($finalrating, 4);
-	$query =  "UPDATE ".$xoopsDB->prefix("addresses_addresses")." SET rating=$finalrating, votes=$votesDB WHERE aid = $sel_id";
-	//echo $query;
-	$xoopsDB->query($query) or exit();
+function xoops_meta_description($content)
+{
+	global $xoopsTpl, $xoTheme;
+	$myts =& MyTextSanitizer::getInstance();
+	$content= $myts->undoHtmlSpecialChars($myts->displayTarea($content));
+	if(isset($xoTheme) && is_object($xoTheme)) {
+		$xoTheme->addMeta( 'meta', 'description', strip_tags($content));
+	} else {	// Compatibility for old Xoops versions
+		$xoopsTpl->assign('xoops_meta_description', strip_tags($content));
 	}
-
-
-//returns the total number of items in items table that are accociated with a given table $table id
-function getTotalItems($sel_id, $status="")
-	{
-	global $xoopsDB, $mytree;
-	$count = 0;
-	$arr = array();
-	$query = "select count(*) from ".$xoopsDB->prefix("addresses_addresses")." where cid=".$sel_id."";
-	if($status!="")
-		{
-		$query .= " and status>=$status";
-		}
-	$result = $xoopsDB->query($query);
-	list($thing) = $xoopsDB->fetchRow($result);
-	$count = $thing;
-	$arr = $mytree->getAllChildId($sel_id);
-	$size = count($arr);
-	for($i=0;$i<$size;$i++)
-		{
-		$query2 = "select count(*) from ".$xoopsDB->prefix("addresses_addresses")." where cid=".$arr[$i]."";
-		if($status!="")
-			{
-			$query2 .= " and status>=$status";
-			}
-		$result2 = $xoopsDB->query($query2);
-		list($thing) = $xoopsDB->fetchRow($result2);
-		$count += $thing;
-		}
-	return $count;
-	}
+}
 ?>

@@ -1,0 +1,11 @@
+	
+<table class="outer">
+	<{foreachq item=broken from=$block}>
+		<tr class = "<{cycle values = "even,odd"}>">
+			<td><{$broken.broken_id}>;
+					<{$broken.broken_aid}>;
+					<{$broken.broken_sender}>;
+					</td>
+		</tr>
+	<{/foreach}>
+</table>	

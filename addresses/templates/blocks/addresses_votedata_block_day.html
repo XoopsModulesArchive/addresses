@@ -1,0 +1,12 @@
+	
+<table class="outer">
+	<{foreachq item=votedata from=$block}>
+		<tr class = "<{cycle values = "even,odd"}>">
+			<td><{$votedata.votedata_rid}>;
+					<{$votedata.votedata_aid}>;
+					<{$votedata.votedata_ruser}>;
+					</td>
+		</tr>
+	<{/foreach}>
+</table>
+	
