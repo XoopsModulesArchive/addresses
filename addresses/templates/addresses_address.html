@@ -1,0 +1,44 @@
+<table width='100%' cellspacing='1' cellpadding ='2' class = 'outer'>
+<tr> 
+	<td class="itemHead" align='left' height="10" colspan="2"><b><{$lang_category}>: <{$link.category}></b></td>
+</tr>
+<tr > 
+	<td class="head" align='left' height="15" colspan="2"><{$link.adminlink}><a href='address_visit.php?cid=<{$link.cid}>&amp;aid=<{$link.id}>' id='<{$link.id}>' name='<{$link.id}>'><b><{$link.title}></b></a><{$link.pop}><{$link.new}></td>
+</tr>
+<tr> 
+	<td class="even" align='left' width="16%"><b><{$lang_address}></b></td>
+	<td class="odd" align='left'><{$link.address}></td>
+</tr>
+<tr> 
+	<td class="even" align='left'><b><{$lang_zip}></b></td>
+	<td class="odd" align='left'><{$link.zip}></td>
+</tr>
+<tr> 
+	<td class="even" align='left'><b><{$lang_city}></b></td>
+	<td class="odd" align='left'><{$link.city}></td>
+</tr>
+<!-- SHINE: if you want to show banner within index and category view enable lines below -->
+
+<!-- <{if $link.logourl != ""}>
+<tr> 
+<td class="odd" align='center' colspan="2"> 
+
+<a href='address_visit.php?cid=<{$link.cid}>&amp;aid=<{$link.id}>'><img src="<{$xoops_url}>/modules/addresses/images/shots/<{$link.logourl}>" align="center" vspace="3" hspace="3" border="0" /></a> 
+
+</td>
+</tr>
+<{/if}> -->
+
+<!-- SHINE: end code for bannerview within index and category view -->
+<tr align="center"> 
+	<td class="head" colspan="2"> 
+		<a href='address_visit.php?cid=<{$link.cid}>&amp;aid=<{$link.id}>'> &nbsp;<b><{$lang_viewmore}></b></a><br />
+	</td>
+</tr>
+<tr> 
+	<td class="even" align='center' colspan="2">
+		<b><{$lang_hits}></b>&nbsp;<{$link.hits}><b>&nbsp;<{$lang_rating}></b>&nbsp;<{$link.rating}>&nbsp;(<{$link.votes}>)&nbsp;<b><{$lang_lastupdate}>&nbsp;</b><{$link.updated}>
+	</td>
+</tr>
+</table>
+<br />

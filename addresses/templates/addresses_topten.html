@@ -1,0 +1,34 @@
+<br /><br />
+
+<div style="margin-top: 2px;text-align: center;"><a href="<{$xoops_url}>/modules/addresses/index.php"><img src="<{$xoops_url}>/modules/addresses/images/logo.gif" alt="" /></a></div>
+<br /><br /><br />
+<!-- Start ranking loop -->
+<{foreach item=ranking from=$rankings}>
+<table border = 0 cellpadding = '2' cellspacing = '1' class="outer">
+<tr>
+	<th colspan="6"><{$ranking.title}> (<{$lang_sortby}>)</th>
+</tr>
+<tr>
+	<td class="head" width='7%'><{$lang_rank}></td>
+	<td class="head" width='28%'><{$lang_title}></td>
+	<td class="head" width='40%'><{$lang_category}></td>
+	<td class="head" width='8%' align='center'><{$lang_hits}></td>
+	<td class="head" width='9%' align='center'><{$lang_rating}></td>
+	<td class="head" width='8%' align='right'><{$lang_vote}></td>
+</tr>
+<!-- Start addresses loop -->
+<{foreach item=link from=$ranking.addresses}>
+<tr>
+	<td class="even"><{$link.rank}></td>
+	<td class="odd"><a href='address_single.php?cid=<{$link.cid}>&amp;aid=<{$link.id}>'><{$link.title}> <{$link.new}><{$link.pop}></a></td>
+	<td class="even"><{$link.category}></td>
+	<td class="odd" align='center'><{$link.hits}></td>
+	<td class="even" align='center'><{$link.rating}></td>
+	<td class="odd" align='right'><{$link.votes}></td>
+</tr>
+<{/foreach}>
+<!-- End addresses loop-->
+</table>
+<br />
+<{/foreach}>
+<!-- End ranking loop -->

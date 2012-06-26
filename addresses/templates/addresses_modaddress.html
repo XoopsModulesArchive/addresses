@@ -1,0 +1,132 @@
+<!-- hack LUCIO - start -->
+<script type="text/javascript">
+//<![CDATA[
+var address_value;
+var zip_value;
+var city_value;
+var country_value;
+var request_value;
+var lat_value;
+var lon_value;
+var zoom_value;
+function getLatLonZoom()
+	{
+	address_value = document.getElementById("address").value;
+	zip_value = document.getElementById("zip").value;
+	city_value = document.getElementById("city").value;
+	country_value = document.getElementById("country").value;
+	request_value = address_value+','+zip_value+','+city_value+','+country_value;
+	if (request_value == ',,,') request_value = '<{$default_address}>';
+	lat_value = document.getElementById("lat").value;
+	if (!lat_value) lat_value = <{$default_lat}>;
+	lon_value = document.getElementById("lon").value;
+	if (!lon_value) lon_value = <{$default_lon}>;
+	zoom_value = document.getElementById("zoom").value;
+	if (!zoom_value) zoom_value = <{$default_zoom}>;
+	}
+getLatLonZoom();
+//]]>
+</script>
+<!-- hack LUCIO - end -->
+<p align="center">
+	<a href="<{$xoops_url}>/modules/addresses/index.php"><img src="<{$xoops_url}>/modules/addresses/images/logo.gif" border="0" alt="" /></a>
+</p>
+<h4><{$lang_requestmod}></h4>
+<form action="address_mod.php" method="post">
+<table width="80%" cellpading = "2" cellspacing = "1" class = "outer">
+<tr> 
+	<td align="left" class = 'itemHead' colspan = "2"><{$lang_modify}> <{$address.title}> <{$address.new}><{$address.pop}></td>
+</tr>
+<tr> 
+	<td align="right" class = 'head'><{$lang_linkid}></td>
+	<td class = 'even'>
+	<b><{$address.id}></b>
+	</td>
+</tr>
+<tr> 
+	<td align="right" class = 'head'><{$lang_sitetitle}></td>
+	<td class = 'even'>
+	<input type="text" name="title" size="50" maxlength="100" value="<{$address.title}>">
+	</td>
+</tr>
+<tr> 
+	<td align="right" class = 'head'><{$lang_category}></td>
+	<td class = 'even'><{$category_selbox}></td>
+</tr>
+<!-- hack LUCIO - start -->
+<tr>
+	<td class='head' align="right"><{$lang_address}></td>
+	<td class='even'><input type="text" name="address" id="address" size="50" maxlength="100" value="<{$address.address}>" /></td>
+</tr>
+<tr>
+	<td class='head' align="right" ><{$lang_zip}></td>
+	<td class='even'><input type="text" name="zip" id="zip" size="20" maxlength="20" value="<{$address.zip}>" /></td>
+</tr>
+<tr>
+	<td align="right" class='head'><{$lang_city}></td>
+	<td class='even'><input type="text" name="city" id="city" size="50" maxlength="100" value="<{$address.city}>" /></td>
+</tr>
+<tr>
+	<td align="right" class='head'><{$lang_country}></td>
+	<td class='even'><input type="text" name="country" id="country" size="50" maxlength="100" value="<{$address.country}>" /></td>
+</tr>
+<tr>
+	<td align="right" class='head'><{$lang_lat}></td>
+	<td class='even'><input type="text" name="lat" id="lat" size="15" maxlength="30" value="<{$address.lat}>" /></td>
+</tr>
+<tr>
+	<td align="right" class='head'><{$lang_lon}></td>
+	<td class='even'><input type="text" name="lon" id="lon" size="15" maxlength="30" value="<{$address.lon}>" /></td>
+</tr>
+<tr>
+	<td align="right" class='head'><{$lang_zoom}></td>
+	<td class='even'><input type="text" name="zoom" id="zoom" size="15" maxlength="30" value="<{$address.zoom}>" /></td>
+</tr>
+<tr>
+	<td align="right" class='head'><{$lang_map}></td>
+	<td class='even'><input type="button" name="<{$lang_map}>" value="<{$lang_map}>" onclick="getLatLonZoom();window.open('<{$xoops_url}>/modules/addresses/google_maps_popup.php?lat='+lat_value+'&lon='+lon_value+'&zoom='+zoom_value+'&request='+request_value,'google_map_window','<{$popup_options}>');" /></td>
+</tr>
+<!-- hack LUCIO - end -->
+<tr> 
+	<td align="right" class = 'head'><{$lang_phone}></td>
+	<td class = 'even'><input type="text" name="phone" size="20" maxlength="20" value="<{$address.phone}>" /></td>
+</tr>
+<tr> 
+	<td align="right" class = 'head'><{$lang_mobile}></td>
+	<td class = 'even'><input type="text" name="mobile" size="20" maxlength="20" value="<{$address.mobile}>" /></td>
+</tr>
+<tr> 
+	<td align="right" class = 'head' ><{$lang_fax}></td>
+	<td class = 'even'><input type="text" name="fax" size="20" maxlength="20" value="<{$address.fax}>" /></td>
+</tr>
+<tr> 
+	<td align="right" class = 'head'><{$lang_contemail}></td>
+	<td class = 'even'><input type="text" name="contemail" size="50" maxlength="100" value="<{$address.contemail}>" /></td>
+</tr>
+<tr> 
+	<td align="right" class = 'head'><{$lang_siteurl}></td>
+	<td class = 'even'><input type="text" name="url" size="50" maxlength="100" value="<{$address.url}>" /></td>
+</tr>
+<tr> 
+	<td align="right" class = 'head'><{$lang_opened}></td>
+	<td class = 'even'><textarea name=opentime cols="40" rows="4" class="text"><{$address.opentime}></textarea></td>
+</tr>
+<tr> 
+<td></td>
+<td></td>
+</tr>
+<tr> 
+	<td align="right" valign="top" class = 'head'><{$lang_description}></td>
+	<td class = 'even'><textarea name=description cols=45 rows=7><{$address.description}></textarea></td>
+</tr>
+<tr> 
+	<td colspan="2" align="center" class = 'even'><br />
+		<input type="hidden" name="logourl" value="<{$address.logourl}>" />
+		<input type="hidden" name="aid" value="<{$address.id}>" />
+		<input type="submit" name="submit" value="<{$lang_sendrequest}>" />
+		&nbsp;
+		<input type=button value="<{$lang_cancel}>" onclick="javascript:history.go(-1)" /> 
+	</td>
+</tr>
+</table>
+</form>
