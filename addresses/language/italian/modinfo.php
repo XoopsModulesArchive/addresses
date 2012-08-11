@@ -35,12 +35,12 @@ define("_MI_MYADDRESSES_ADMENU5","Elenco Indirizzi modificati");
 define("_MI_MYADDRESSES_ADMENU6","Link Checker");
 
 // Title of config items
-define('_MI_MYADDRESSES_POPULAR', 'Scegli il numero di visite per segnalare un Indirizzo come &quot;popolare&quot;');
-define('_MI_MYADDRESSES_NEWLINKS', 'Scegli il massimo numero di nuovi Indirizzi da visualizzare sulla pagina principale');
-define('_MI_MYADDRESSES_PERPAGE', 'Scegli il massimo numero di Indirizzi da visualizzare su ogni pagina');
-define('_MI_MYADDRESSES_USESHOTS', '[Immagini]<br />Scegli S&igrave; per visualizzare le istantanee per ogni Indirizzo');
-define('_MI_MYADDRESSES_USEFRAMES', 'Vuoi visualizzare le pagine linked in un frame?');
-define('_MI_MYADDRESSES_SHOTWIDTH', 'Massima dimensione per ogni istantanea');
+define('_MI_MYADDRESSES_POPULAR','Scegli il numero di visite per segnalare un Indirizzo come &quot;popolare&quot;');
+define('_MI_MYADDRESSES_NEWLINKS','Scegli il massimo numero di nuovi Indirizzi da visualizzare sulla pagina principale');
+define('_MI_MYADDRESSES_PERPAGE','Scegli il massimo numero di Indirizzi da visualizzare su ogni pagina');
+define('_MI_MYADDRESSES_USESHOTS','[Immagini]<br />Scegli S&igrave; per visualizzare le istantanee per ogni Indirizzo');
+define('_MI_MYADDRESSES_USEFRAMES','Vuoi visualizzare le pagine linked in un frame?');
+define('_MI_MYADDRESSES_SHOTWIDTH','Massima dimensione per ogni istantanea');
 define('_MI_MYADDRESSES_ANONPOST','Consenti agli utenti anonimi di proporre Indirizzi?');
 define('_MI_MYADDRESSES_AUTOAPPROVE','I nuovi Indirizzi sono auto approvati senza visto dell&#39;admin?');
 //hack LUCIO - start
@@ -57,16 +57,16 @@ define('_MI_MYADDRESSES_MAX_SHOT_WIDTH','[Immagini]<br />Massima larghezza per o
 define('_MI_MYADDRESSES_MAX_SHOT_HEIGHT','[Immagini]<br />Massima altezza per ogni immagine:');
 
 // Options of config items
-define('_MI_MYADDRESSES_PERPAGE_ALL', 'tutti');
+define('_MI_MYADDRESSES_PERPAGE_ALL','tutti');
 //hack LUCIO - end
 
 // Description of each config items
-define('_MI_MYADDRESSES_POPULARDSC', '');
-define('_MI_MYADDRESSES_NEWLINKSDSC', '');
-define('_MI_MYADDRESSES_PERPAGEDSC', '');
-define('_MI_MYADDRESSES_USEFRAMEDSC', '');
-define('_MI_MYADDRESSES_USESHOTSDSC', '');
-define('_MI_MYADDRESSES_SHOTWIDTHDSC', '');
+define('_MI_MYADDRESSES_POPULARDSC','');
+define('_MI_MYADDRESSES_NEWLINKSDSC','');
+define('_MI_MYADDRESSES_PERPAGEDSC','');
+define('_MI_MYADDRESSES_USEFRAMEDSC','');
+define('_MI_MYADDRESSES_USESHOTSDSC','');
+define('_MI_MYADDRESSES_SHOTWIDTHDSC','');
 define('_MI_MYADDRESSES_AUTOAPPROVEDSC','');
 //hack LUCIO - start
 define('_MI_MYADDRESSES_API_KEYDSC','Ottieni l&#39;API Key dal sito:<br /><a href="http://code.google.com/apis/maps/signup.html" target="_blank">http://code.google.com/apis/maps/signup.html</a>');
@@ -83,53 +83,53 @@ define('_MI_MYADDRESSES_MAX_SHOT_HEIGHTDSC','Pixel');
 //hack LUCIO - end
 
 // Text for notifications
-define('_MI_MYADDRESSES_GLOBAL_NOTIFY', 'Globali');
-define('_MI_MYADDRESSES_GLOBAL_NOTIFYDSC', 'Opzioni globali di notifica dell&lsquo Indirizzario.');
+define('_MI_MYADDRESSES_GLOBAL_NOTIFY','Globali');
+define('_MI_MYADDRESSES_GLOBAL_NOTIFYDSC','Opzioni globali di notifica dell&lsquo Indirizzario.');
 
-define('_MI_MYADDRESSES_CATEGORY_NOTIFY', 'Categorie');
-define('_MI_MYADDRESSES_CATEGORY_NOTIFYDSC', 'Opzioni di notifica da applicare alle attuali categorie.');
+define('_MI_MYADDRESSES_CATEGORY_NOTIFY','Categorie');
+define('_MI_MYADDRESSES_CATEGORY_NOTIFYDSC','Opzioni di notifica da applicare alle attuali categorie.');
 
-define('_MI_MYADDRESSES_LINK_NOTIFY', 'Indirizzi');
-define('_MI_MYADDRESSES_LINK_NOTIFYDSC', 'Opzioni di notifica da applicare agli Indirizzi attuali.');
+define('_MI_MYADDRESSES_LINK_NOTIFY','Indirizzi');
+define('_MI_MYADDRESSES_LINK_NOTIFYDSC','Opzioni di notifica da applicare agli Indirizzi attuali.');
 
-define('_MI_MYADDRESSES_GLOBAL_NEWCATEGORY_NOTIFY', 'Nuova Categoria');
-define('_MI_MYADDRESSES_GLOBAL_NEWCATEGORY_NOTIFYCAP', 'Segnalami quando viene creata una nuova categoria.');
-define('_MI_MYADDRESSES_GLOBAL_NEWCATEGORY_NOTIFYDSC', 'Riceve una notifica quando una nuova categoria viene creata.');
-define('_MI_MYADDRESSES_GLOBAL_NEWCATEGORY_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notifica : Creata una nuova categoria dell&lsquo indirizzario');
+define('_MI_MYADDRESSES_GLOBAL_NEWCATEGORY_NOTIFY','Nuova Categoria');
+define('_MI_MYADDRESSES_GLOBAL_NEWCATEGORY_NOTIFYCAP','Segnalami quando viene creata una nuova categoria.');
+define('_MI_MYADDRESSES_GLOBAL_NEWCATEGORY_NOTIFYDSC','Riceve una notifica quando una nuova categoria viene creata.');
+define('_MI_MYADDRESSES_GLOBAL_NEWCATEGORY_NOTIFYSBJ','[{X_SITENAME}] {X_MODULE} auto-notifica : Creata una nuova categoria dell&lsquo indirizzario');
 
-define('_MI_MYADDRESSES_GLOBAL_LINKMODIFY_NOTIFY', 'Richiesta di modifica dell&lsquo;Indirizzario');
-define('_MI_MYADDRESSES_GLOBAL_LINKMODIFY_NOTIFYCAP', 'Segnalami le richieste di modifica degli indirizzi.');
-define('_MI_MYADDRESSES_GLOBAL_LINKMODIFY_NOTIFYDSC', 'Riceve una notifica quando viene proposta una richiesta di modifica di un indirizzo.');
-define('_MI_MYADDRESSES_GLOBAL_LINKMODIFY_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notifica : Richiesta la modifica di un Indirizzo');
+define('_MI_MYADDRESSES_GLOBAL_LINKMODIFY_NOTIFY','Richiesta di modifica dell&lsquo;Indirizzario');
+define('_MI_MYADDRESSES_GLOBAL_LINKMODIFY_NOTIFYCAP','Segnalami le richieste di modifica degli indirizzi.');
+define('_MI_MYADDRESSES_GLOBAL_LINKMODIFY_NOTIFYDSC','Riceve una notifica quando viene proposta una richiesta di modifica di un indirizzo.');
+define('_MI_MYADDRESSES_GLOBAL_LINKMODIFY_NOTIFYSBJ','[{X_SITENAME}] {X_MODULE} auto-notifica : Richiesta la modifica di un Indirizzo');
 
-define('_MI_MYADDRESSES_GLOBAL_LINKBROKEN_NOTIFY', 'Segnalazione di Indirizzo errato');
-define('_MI_MYADDRESSES_GLOBAL_LINKBROKEN_NOTIFYCAP', 'Segnalami ogni rapporto su indirizzi errati.');
-define('_MI_MYADDRESSES_GLOBAL_LINKBROKEN_NOTIFYDSC', 'Riceve una notifica per ogni segnalazione di link errato.');
-define('_MI_MYADDRESSES_GLOBAL_LINKBROKEN_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notifica : Segnalato un Link errato');
+define('_MI_MYADDRESSES_GLOBAL_LINKBROKEN_NOTIFY','Segnalazione di Indirizzo errato');
+define('_MI_MYADDRESSES_GLOBAL_LINKBROKEN_NOTIFYCAP','Segnalami ogni rapporto su indirizzi errati.');
+define('_MI_MYADDRESSES_GLOBAL_LINKBROKEN_NOTIFYDSC','Riceve una notifica per ogni segnalazione di link errato.');
+define('_MI_MYADDRESSES_GLOBAL_LINKBROKEN_NOTIFYSBJ','[{X_SITENAME}] {X_MODULE} auto-notifica : Segnalato un Link errato');
 
-define('_MI_MYADDRESSES_GLOBAL_LINKSUBMIT_NOTIFY', 'Nuovo Indirizzo proposto');
-define('_MI_MYADDRESSES_GLOBAL_LINKSUBMIT_NOTIFYCAP', 'Segnalami quando un nuovo indirizzo viene proposto (in attesa di approvazione).');
-define('_MI_MYADDRESSES_GLOBAL_LINKSUBMIT_NOTIFYDSC', 'Riceve una notifica quando un nuovo indirizzo viene proposto (in attesa di approvazione).');
-define('_MI_MYADDRESSES_GLOBAL_LINKSUBMIT_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notifica : Proposto un nuovo indirizzo (in attesa di approvazione)');
+define('_MI_MYADDRESSES_GLOBAL_LINKSUBMIT_NOTIFY','Nuovo Indirizzo proposto');
+define('_MI_MYADDRESSES_GLOBAL_LINKSUBMIT_NOTIFYCAP','Segnalami quando un nuovo indirizzo viene proposto (in attesa di approvazione).');
+define('_MI_MYADDRESSES_GLOBAL_LINKSUBMIT_NOTIFYDSC','Riceve una notifica quando un nuovo indirizzo viene proposto (in attesa di approvazione).');
+define('_MI_MYADDRESSES_GLOBAL_LINKSUBMIT_NOTIFYSBJ','[{X_SITENAME}] {X_MODULE} auto-notifica : Proposto un nuovo indirizzo (in attesa di approvazione)');
 
-define('_MI_MYADDRESSES_GLOBAL_NEWLINK_NOTIFY', 'Nuovo Indirizzo');
-define('_MI_MYADDRESSES_GLOBAL_NEWLINK_NOTIFYCAP', 'Segnalami quando un nuovo indirizzo viene pubblicato.');
-define('_MI_MYADDRESSES_GLOBAL_NEWLINK_NOTIFYDSC', 'Riceve una notifica quando un nuovo indirizzo viene pubblicato.');
-define('_MI_MYADDRESSES_GLOBAL_NEWLINK_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notifica : Pubblicazione di un nuovo indirizzo');
+define('_MI_MYADDRESSES_GLOBAL_NEWLINK_NOTIFY','Nuovo Indirizzo');
+define('_MI_MYADDRESSES_GLOBAL_NEWLINK_NOTIFYCAP','Segnalami quando un nuovo indirizzo viene pubblicato.');
+define('_MI_MYADDRESSES_GLOBAL_NEWLINK_NOTIFYDSC','Riceve una notifica quando un nuovo indirizzo viene pubblicato.');
+define('_MI_MYADDRESSES_GLOBAL_NEWLINK_NOTIFYSBJ','[{X_SITENAME}] {X_MODULE} auto-notifica : Pubblicazione di un nuovo indirizzo');
 
-define('_MI_MYADDRESSES_CATEGORY_LINKSUBMIT_NOTIFY', 'Nuovo Indirizzo proposto');
-define('_MI_MYADDRESSES_CATEGORY_LINKSUBMIT_NOTIFYCAP', 'Segnalami quando un nuovo indirizzo viene proposto (in attesa di approvazione) nella categoria corrente.');
-define('_MI_MYADDRESSES_CATEGORY_LINKSUBMIT_NOTIFYDSC', 'Riceve una notifica quando un nuovo indirizzo viene proposto (in attesa di approvazione) nella categoria corrente.');
-define('_MI_MYADDRESSES_CATEGORY_LINKSUBMIT_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notifica : Pubblicazione di un nuovo indirizzo nella categoria');
+define('_MI_MYADDRESSES_CATEGORY_LINKSUBMIT_NOTIFY','Nuovo Indirizzo proposto');
+define('_MI_MYADDRESSES_CATEGORY_LINKSUBMIT_NOTIFYCAP','Segnalami quando un nuovo indirizzo viene proposto (in attesa di approvazione) nella categoria corrente.');
+define('_MI_MYADDRESSES_CATEGORY_LINKSUBMIT_NOTIFYDSC','Riceve una notifica quando un nuovo indirizzo viene proposto (in attesa di approvazione) nella categoria corrente.');
+define('_MI_MYADDRESSES_CATEGORY_LINKSUBMIT_NOTIFYSBJ','[{X_SITENAME}] {X_MODULE} auto-notifica : Pubblicazione di un nuovo indirizzo nella categoria');
 
-define('_MI_MYADDRESSES_CATEGORY_NEWLINK_NOTIFY', 'Nuovo Indirizzo');
-define('_MI_MYADDRESSES_CATEGORY_NEWLINK_NOTIFYCAP', 'Segnalami quando un nuovo indirizzo viene pubblicato nella categoria corrente.');
-define('_MI_MYADDRESSES_CATEGORY_NEWLINK_NOTIFYDSC', 'Riceve una notifica quando un nuovo indirizzo viene pubblicato nella categoria corrente.');
-define('_MI_MYADDRESSES_CATEGORY_NEWLINK_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notifica : Pubblicazione di un nuovo indirizzo nella categoria');
+define('_MI_MYADDRESSES_CATEGORY_NEWLINK_NOTIFY','Nuovo Indirizzo');
+define('_MI_MYADDRESSES_CATEGORY_NEWLINK_NOTIFYCAP','Segnalami quando un nuovo indirizzo viene pubblicato nella categoria corrente.');
+define('_MI_MYADDRESSES_CATEGORY_NEWLINK_NOTIFYDSC','Riceve una notifica quando un nuovo indirizzo viene pubblicato nella categoria corrente.');
+define('_MI_MYADDRESSES_CATEGORY_NEWLINK_NOTIFYSBJ','[{X_SITENAME}] {X_MODULE} auto-notifica : Pubblicazione di un nuovo indirizzo nella categoria');
 
-define('_MI_MYADDRESSES_LINK_APPROVE_NOTIFY', 'Indirizzo Approvato');
-define('_MI_MYADDRESSES_LINK_APPROVE_NOTIFYCAP', 'Segnalami quando questo indirizzo &egrave; approvato.');
-define('_MI_MYADDRESSES_LINK_APPROVE_NOTIFYDSC', 'Riceve una notifica quando questo indirizzo &egrave; approvato.');
-define('_MI_MYADDRESSES_LINK_APPROVE_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notifica : Indirizzo approvato');
+define('_MI_MYADDRESSES_LINK_APPROVE_NOTIFY','Indirizzo Approvato');
+define('_MI_MYADDRESSES_LINK_APPROVE_NOTIFYCAP','Segnalami quando questo indirizzo &egrave; approvato.');
+define('_MI_MYADDRESSES_LINK_APPROVE_NOTIFYDSC','Riceve una notifica quando questo indirizzo &egrave; approvato.');
+define('_MI_MYADDRESSES_LINK_APPROVE_NOTIFYSBJ','[{X_SITENAME}] {X_MODULE} auto-notifica : Indirizzo approvato');
 
 ?>

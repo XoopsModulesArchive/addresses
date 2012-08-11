@@ -58,7 +58,7 @@ define("_MD_LINKID","Address ID");
 define("_MD_SITETITLE","Name/Organisation");
 define("_MD_SITEURL","Website URL");
 define("_MD_OPTIONS","Options");
-define("_MD_NOTIFYAPPROVE", "Notify me when this address is approved");
+define("_MD_NOTIFYAPPROVE","Notify me when this address is approved");
 define("_MD_SHOTIMAGE","Screenshot Img");
 define("_MD_SHOTIMAGEDESC","Max size: %sbytes<br />%sx%spixels");
 define("_MD_SENDREQUEST","Send Request");
@@ -96,7 +96,7 @@ define("_MD_TITLE","Name");
 define("_MD_DATE","Date");
 define("_MD_POPULARITY","Popularity");
 define("_MD_CURSORTEDBY","Addresses currently sorted by %s");
-define("_MD_PREVIOUS", "&laquo;Previous"); //addresses
+define("_MD_PREVIOUS","&laquo;Previous"); //addresses
 define("_MD_NEXT","Next");
 define("_MD_NOMATCH","No matches found to your query");
 
@@ -194,7 +194,7 @@ define("_MD_LAT","Latitude");
 define("_MD_LON","Longitude");
 define("_MD_ZOOM","Zoom level");
 // used in a javascript where address is a javascript variable, in english: "address + ' not found'"
-define("_MD_ADDRESS_NOT_FOUND", "address + ' not found'");
+define("_MD_ADDRESS_NOT_FOUND","address + ' not found'");
 // hack LUCIO - start
 define("_MD_PHONE","Phone");
 define("_MD_FAX","Fax");

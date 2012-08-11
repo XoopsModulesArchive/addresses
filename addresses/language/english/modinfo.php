@@ -36,12 +36,12 @@ define("_MI_MYADDRESSES_ADMENU5","Modified Addresses");
 define("_MI_MYADDRESSES_ADMENU6","Addreslink Checker");
 
 // Title of config items
-define('_MI_MYADDRESSES_POPULAR', 'Select the number of views for Addresses to be marked as popular');
-define('_MI_MYADDRESSES_NEWLINKS', 'Select the maximum number of new Addresses displayed on top page');
-define('_MI_MYADDRESSES_PERPAGE', 'Select the maximum number of Addresses displayed in each page');
-define('_MI_MYADDRESSES_USESHOTS', '[Shots]<br />Select yes to display banner/logo images for each Address');
-define('_MI_MYADDRESSES_USEFRAMES', 'Would you like to display the linked Address withing a frame?');
-define('_MI_MYADDRESSES_SHOTWIDTH', 'Maximum allowed width of each banner/logo image');
+define('_MI_MYADDRESSES_POPULAR','Select the number of views for Addresses to be marked as popular');
+define('_MI_MYADDRESSES_NEWLINKS','Select the maximum number of new Addresses displayed on top page');
+define('_MI_MYADDRESSES_PERPAGE','Select the maximum number of Addresses displayed in each page');
+define('_MI_MYADDRESSES_USESHOTS','[Shots]<br />Select yes to display banner/logo images for each Address');
+define('_MI_MYADDRESSES_USEFRAMES','Would you like to display the linked Address withing a frame?');
+define('_MI_MYADDRESSES_SHOTWIDTH','Maximum allowed width of each banner/logo image');
 define('_MI_MYADDRESSES_ANONPOST','Allow anonymous users to post Addresses?');
 define('_MI_MYADDRESSES_AUTOAPPROVE','Auto approve new Addresses without admin intervention?');
 //hack LUCIO - start
@@ -58,16 +58,16 @@ define('_MI_MYADDRESSES_MAX_SHOT_WIDTH','[Shots]<br />Maximum allowed width of e
 define('_MI_MYADDRESSES_MAX_SHOT_HEIGHT','[Shots]<br />Maximum allowed height of each banner/logo image:');
 
 // Options of config items
-define('_MI_MYADDRESSES_PERPAGE_ALL', 'All');
+define('_MI_MYADDRESSES_PERPAGE_ALL','All');
 //hack LUCIO - end
 
 // Description of each config items
-define('_MI_MYADDRESSES_POPULARDSC', '');
-define('_MI_MYADDRESSES_NEWLINKSDSC', '');
-define('_MI_MYADDRESSES_PERPAGEDSC', '');
-define('_MI_MYADDRESSES_USEFRAMEDSC', '');
-define('_MI_MYADDRESSES_USESHOTSDSC', '');
-define('_MI_MYADDRESSES_SHOTWIDTHDSC', '');
+define('_MI_MYADDRESSES_POPULARDSC','');
+define('_MI_MYADDRESSES_NEWLINKSDSC','');
+define('_MI_MYADDRESSES_PERPAGEDSC','');
+define('_MI_MYADDRESSES_USEFRAMEDSC','');
+define('_MI_MYADDRESSES_USESHOTSDSC','');
+define('_MI_MYADDRESSES_SHOTWIDTHDSC','');
 define('_MI_MYADDRESSES_AUTOAPPROVEDSC','');
 
 //hack LUCIO - start
@@ -85,53 +85,53 @@ define('_MI_MYADDRESSES_MAX_SHOT_HEIGHTDSC','Pixel');
 //hack LUCIO - start
 
 // Text for notifications
-define('_MI_MYADDRESSES_GLOBAL_NOTIFY', 'Global');
-define('_MI_MYADDRESSES_GLOBAL_NOTIFYDSC', 'Global addresses notification options.');
+define('_MI_MYADDRESSES_GLOBAL_NOTIFY','Global');
+define('_MI_MYADDRESSES_GLOBAL_NOTIFYDSC','Global addresses notification options.');
 
-define('_MI_MYADDRESSES_CATEGORY_NOTIFY', 'Category');
-define('_MI_MYADDRESSES_CATEGORY_NOTIFYDSC', 'Notification options that apply to the current address category.');
+define('_MI_MYADDRESSES_CATEGORY_NOTIFY','Category');
+define('_MI_MYADDRESSES_CATEGORY_NOTIFYDSC','Notification options that apply to the current address category.');
 
-define('_MI_MYADDRESSES_LINK_NOTIFY', 'Address');
-define('_MI_MYADDRESSES_LINK_NOTIFYDSC', 'Notification options that aply to the current adsress.');
+define('_MI_MYADDRESSES_LINK_NOTIFY','Address');
+define('_MI_MYADDRESSES_LINK_NOTIFYDSC','Notification options that aply to the current adsress.');
 
-define('_MI_MYADDRESSES_GLOBAL_NEWCATEGORY_NOTIFY', 'New Category');
-define('_MI_MYADDRESSES_GLOBAL_NEWCATEGORY_NOTIFYCAP', 'Notify me when a new address category is created.');
-define('_MI_MYADDRESSES_GLOBAL_NEWCATEGORY_NOTIFYDSC', 'Receive notification when a new address category is created.');
-define('_MI_MYADDRESSES_GLOBAL_NEWCATEGORY_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New address category');
+define('_MI_MYADDRESSES_GLOBAL_NEWCATEGORY_NOTIFY','New Category');
+define('_MI_MYADDRESSES_GLOBAL_NEWCATEGORY_NOTIFYCAP','Notify me when a new address category is created.');
+define('_MI_MYADDRESSES_GLOBAL_NEWCATEGORY_NOTIFYDSC','Receive notification when a new address category is created.');
+define('_MI_MYADDRESSES_GLOBAL_NEWCATEGORY_NOTIFYSBJ','[{X_SITENAME}] {X_MODULE} auto-notify : New address category');
 
-define('_MI_MYADDRESSES_GLOBAL_LINKMODIFY_NOTIFY', 'Modify Address Requested');
-define('_MI_MYADDRESSES_GLOBAL_LINKMODIFY_NOTIFYCAP', 'Notify me of any address modification request.');
-define('_MI_MYADDRESSES_GLOBAL_LINKMODIFY_NOTIFYDSC', 'Receive notification when any address modification request is submitted.');
-define('_MI_MYADDRESSES_GLOBAL_LINKMODIFY_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : Address Modification Requested');
+define('_MI_MYADDRESSES_GLOBAL_LINKMODIFY_NOTIFY','Modify Address Requested');
+define('_MI_MYADDRESSES_GLOBAL_LINKMODIFY_NOTIFYCAP','Notify me of any address modification request.');
+define('_MI_MYADDRESSES_GLOBAL_LINKMODIFY_NOTIFYDSC','Receive notification when any address modification request is submitted.');
+define('_MI_MYADDRESSES_GLOBAL_LINKMODIFY_NOTIFYSBJ','[{X_SITENAME}] {X_MODULE} auto-notify : Address Modification Requested');
 
-define('_MI_MYADDRESSES_GLOBAL_LINKBROKEN_NOTIFY', 'Broken Addresslink Submitted');
-define('_MI_MYADDRESSES_GLOBAL_LINKBROKEN_NOTIFYCAP', 'Notify me of any broken addresslink report.');
-define('_MI_MYADDRESSES_GLOBAL_LINKBROKEN_NOTIFYDSC', 'Receive notification when any broken addresslink report is submitted.');
-define('_MI_MYADDRESSES_GLOBAL_LINKBROKEN_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : Broken Addresslink Reported');
+define('_MI_MYADDRESSES_GLOBAL_LINKBROKEN_NOTIFY','Broken Addresslink Submitted');
+define('_MI_MYADDRESSES_GLOBAL_LINKBROKEN_NOTIFYCAP','Notify me of any broken addresslink report.');
+define('_MI_MYADDRESSES_GLOBAL_LINKBROKEN_NOTIFYDSC','Receive notification when any broken addresslink report is submitted.');
+define('_MI_MYADDRESSES_GLOBAL_LINKBROKEN_NOTIFYSBJ','[{X_SITENAME}] {X_MODULE} auto-notify : Broken Addresslink Reported');
 
-define('_MI_MYADDRESSES_GLOBAL_LINKSUBMIT_NOTIFY', 'New Address Submitted');
-define('_MI_MYADDRESSES_GLOBAL_LINKSUBMIT_NOTIFYCAP', 'Notify me when any new address is submitted (awaiting approval).');
-define('_MI_MYADDRESSES_GLOBAL_LINKSUBMIT_NOTIFYDSC', 'Receive notification when any new address is submitted (awaiting approval).');
-define('_MI_MYADDRESSES_GLOBAL_LINKSUBMIT_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New address submitted');
+define('_MI_MYADDRESSES_GLOBAL_LINKSUBMIT_NOTIFY','New Address Submitted');
+define('_MI_MYADDRESSES_GLOBAL_LINKSUBMIT_NOTIFYCAP','Notify me when any new address is submitted (awaiting approval).');
+define('_MI_MYADDRESSES_GLOBAL_LINKSUBMIT_NOTIFYDSC','Receive notification when any new address is submitted (awaiting approval).');
+define('_MI_MYADDRESSES_GLOBAL_LINKSUBMIT_NOTIFYSBJ','[{X_SITENAME}] {X_MODULE} auto-notify : New address submitted');
 
-define('_MI_MYADDRESSES_GLOBAL_NEWLINK_NOTIFY', 'New Address');
-define('_MI_MYADDRESSES_GLOBAL_NEWLINK_NOTIFYCAP', 'Notify me when any new address is posted.');
-define('_MI_MYADDRESSES_GLOBAL_NEWLINK_NOTIFYDSC', 'Receive notification when any new address is posted.');
-define('_MI_MYADDRESSES_GLOBAL_NEWLINK_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New address');
+define('_MI_MYADDRESSES_GLOBAL_NEWLINK_NOTIFY','New Address');
+define('_MI_MYADDRESSES_GLOBAL_NEWLINK_NOTIFYCAP','Notify me when any new address is posted.');
+define('_MI_MYADDRESSES_GLOBAL_NEWLINK_NOTIFYDSC','Receive notification when any new address is posted.');
+define('_MI_MYADDRESSES_GLOBAL_NEWLINK_NOTIFYSBJ','[{X_SITENAME}] {X_MODULE} auto-notify : New address');
 
-define('_MI_MYADDRESSES_CATEGORY_LINKSUBMIT_NOTIFY', 'New address Submitted');
-define('_MI_MYADDRESSES_CATEGORY_LINKSUBMIT_NOTIFYCAP', 'Notify me when a new address is submitted (awaiting approval) to the current category.');
-define('_MI_MYADDRESSES_CATEGORY_LINKSUBMIT_NOTIFYDSC', 'Receive notification when a new address is submitted (awaiting approval) to the current category.');
-define('_MI_MYADDRESSES_CATEGORY_LINKSUBMIT_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New address submitted in category');
+define('_MI_MYADDRESSES_CATEGORY_LINKSUBMIT_NOTIFY','New address Submitted');
+define('_MI_MYADDRESSES_CATEGORY_LINKSUBMIT_NOTIFYCAP','Notify me when a new address is submitted (awaiting approval) to the current category.');
+define('_MI_MYADDRESSES_CATEGORY_LINKSUBMIT_NOTIFYDSC','Receive notification when a new address is submitted (awaiting approval) to the current category.');
+define('_MI_MYADDRESSES_CATEGORY_LINKSUBMIT_NOTIFYSBJ','[{X_SITENAME}] {X_MODULE} auto-notify : New address submitted in category');
 
-define('_MI_MYADDRESSES_CATEGORY_NEWLINK_NOTIFY', 'New Address');
-define('_MI_MYADDRESSES_CATEGORY_NEWLINK_NOTIFYCAP', 'Notify me when a new address is posted to the current category.');
-define('_MI_MYADDRESSES_CATEGORY_NEWLINK_NOTIFYDSC', 'Receive notification when a new address is posted to the current category.');
-define('_MI_MYADDRESSES_CATEGORY_NEWLINK_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New address in category');
+define('_MI_MYADDRESSES_CATEGORY_NEWLINK_NOTIFY','New Address');
+define('_MI_MYADDRESSES_CATEGORY_NEWLINK_NOTIFYCAP','Notify me when a new address is posted to the current category.');
+define('_MI_MYADDRESSES_CATEGORY_NEWLINK_NOTIFYDSC','Receive notification when a new address is posted to the current category.');
+define('_MI_MYADDRESSES_CATEGORY_NEWLINK_NOTIFYSBJ','[{X_SITENAME}] {X_MODULE} auto-notify : New address in category');
 
-define('_MI_MYADDRESSES_LINK_APPROVE_NOTIFY', 'Address Approved');
-define('_MI_MYADDRESSES_LINK_APPROVE_NOTIFYCAP', 'Notify me when this address is approved.');
-define('_MI_MYADDRESSES_LINK_APPROVE_NOTIFYDSC', 'Receive notification when this address is approved.');
-define('_MI_MYADDRESSES_LINK_APPROVE_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : Address approved');
+define('_MI_MYADDRESSES_LINK_APPROVE_NOTIFY','Address Approved');
+define('_MI_MYADDRESSES_LINK_APPROVE_NOTIFYCAP','Notify me when this address is approved.');
+define('_MI_MYADDRESSES_LINK_APPROVE_NOTIFYDSC','Receive notification when this address is approved.');
+define('_MI_MYADDRESSES_LINK_APPROVE_NOTIFYSBJ','[{X_SITENAME}] {X_MODULE} auto-notify : Address approved');
 
 ?>

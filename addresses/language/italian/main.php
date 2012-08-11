@@ -59,7 +59,7 @@ define("_MD_LINKID","ID");
 define("_MD_SITETITLE","Nome");
 define("_MD_SITEURL","Nome del sito (URL)");
 define("_MD_OPTIONS","Opzioni");
-define("_MD_NOTIFYAPPROVE", "Inviami una notifica quando quest&lsquo elemento &egrave; approvato");
+define("_MD_NOTIFYAPPROVE","Inviami una notifica quando quest&lsquo elemento &egrave; approvato");
 define("_MD_SHOTIMAGE","Istantanea");
 define("_MD_SHOTIMAGEDESC","Dim max: %sbyte<br />%sx%spixel");
 define("_MD_SENDREQUEST","Invia la richiesta");
@@ -195,7 +195,7 @@ define("_MD_LAT","Latitudine");
 define("_MD_LON","Longitudine");
 define("_MD_ZOOM","Zoom");
 // used in a javascript where address is a javascript variable, in english: "address + ' not found'"
-define("_MD_ADDRESS_NOT_FOUND", "'Indirizzo non trovato'");
+define("_MD_ADDRESS_NOT_FOUND","'Indirizzo non trovato'");
 // hack LUCIO - start
 define("_MD_PHONE","Telefono fisso");
 define("_MD_FAX","Fax");
