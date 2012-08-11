@@ -47,8 +47,8 @@ define("_AM_ADDRESSES_VOTEDATALIST","List votedata");
 //General
 define("_AM_ADDRESSES_FORMOK","Registered successfull");
 define("_AM_ADDRESSES_FORMDELOK","Deleted successfull");
-define("_AM_ADDRESSES_FORMSUREDEL", "Are you sure you want to delete: <b><span style=\"color : Red\"> %s </span></b>");
-define("_AM_ADDRESSES_FORMSURERENEW", "Are you sure you want renew: <b><span style=\"color : Red\"> %s </span></b>");
+define("_AM_ADDRESSES_FORMSUREDEL","Are you sure you want to delete: <b><span style=\"color : Red\"> %s </span></b>");
+define("_AM_ADDRESSES_FORMSURERENEW","Are you sure you want renew: <b><span style=\"color : Red\"> %s </span></b>");
 define("_AM_ADDRESSES_FORMUPLOAD","Upload");
 define("_AM_ADDRESSES_FORMIMAGE_PATH","File presents in %s");
 define("_AM_ADDRESSES_FORMACTION","Action");
@@ -179,5 +179,5 @@ define("_AM_ADDRESSES_PERMISSIONS_VIEW","Permissions to view");
 define("_AM_ADDRESSES_PERMISSIONS_SUBMIT","Permissions to submit");
 //Error NoFrameworks
 define("_AM_ERROR_NOFRAMEWORKS","Error: You don&#39;t use the Frameworks \"admin module\". Please install this Frameworks");
-define("_AM_ADDRESSES_MAINTAINEDBY", "is maintained by the");
+define("_AM_ADDRESSES_MAINTAINEDBY","is maintained by the");
 ?>

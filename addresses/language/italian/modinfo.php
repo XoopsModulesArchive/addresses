@@ -74,8 +74,8 @@ define("_MI_ADDRESSES_KEYWORDS_DESC","Ensert here the keywords (separate by comm
 //define("_MI_ADDRESSES_SIZE","Mime size");
 //define("_MI_ADDRESSES_MIMETYPES","Mime Types");
 
-define("_MI_ADDRESSES_IDPAYPAL", "Paypal ID");
-define("_MI_ADDRESSES_IDPAYPAL_DESC", "Insert here your id paypal for donactions.");
+define("_MI_ADDRESSES_IDPAYPAL","Paypal ID");
+define("_MI_ADDRESSES_IDPAYPAL_DESC","Insert here your id paypal for donactions.");
 define("_MI_ADDRESSES_ADVERTISE","Code of advertise");
 define("_MI_ADDRESSES_ADVERTISE_DESC","Ensert here the code of advertisement");
 define("_MI_ADDRESSES_ACTSOCIALNETWORKS","View Socialnetworks?");

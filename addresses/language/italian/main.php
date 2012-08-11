@@ -30,8 +30,8 @@
 
 // Main
 define("_MA_ADDRESSES_INDEX","Home");
-define("_MA_ADDRESSES_TITLE", "addresses");
-define("_MA_ADDRESSES_DESC", "Creates an addresses section where users can search/submit/rate various addresses.");
+define("_MA_ADDRESSES_TITLE","addresses");
+define("_MA_ADDRESSES_DESC","Creates an addresses section where users can search/submit/rate various addresses.");
 
 define("_MA_ADDRESSES_BROKEN","Broken");
 
