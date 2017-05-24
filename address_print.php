@@ -2,7 +2,7 @@
 include 'header.php';
 include_once XOOPS_ROOT_PATH.'/class/xoopstree.php';
 
-$myts =& MyTextSanitizer::getInstance();
+$myts = MyTextSanitizer::getInstance();
 $mytree = new XoopsTree($xoopsDB->prefix("addresses_cat"),"cid","pid");
 
 foreach ($_POST as $k => $v) {${$k} = $v;}

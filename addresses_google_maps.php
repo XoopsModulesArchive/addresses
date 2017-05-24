@@ -3,7 +3,7 @@ include_once "header.php";
 include_once XOOPS_ROOT_PATH . "/class/xoopstree.php";
 global $xoopsModuleConfig;
 
-$myts =& MyTextSanitizer::getInstance();// MyTextSanitizer object
+$myts = MyTextSanitizer::getInstance();// MyTextSanitizer object
 $mytree = new XoopsTree($xoopsDB->prefix("addresses_cat"),"cid","pid");
 
 if (!isset($aid)) {$aid = isset($_GET['aid']) ? $_GET['aid'] : '';}

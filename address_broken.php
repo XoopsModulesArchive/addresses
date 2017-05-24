@@ -1,6 +1,6 @@
 <?php
 include "header.php";
-$myts =& MyTextSanitizer::getInstance(); // MyTextSanitizer object
+$myts = MyTextSanitizer::getInstance(); // MyTextSanitizer object
 
 if (!empty($_POST['submit']))
 	{

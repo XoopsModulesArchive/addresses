@@ -1,7 +1,7 @@
 <?php
 include "header.php";
 include_once XOOPS_ROOT_PATH."/class/module.errorhandler.php";
-$myts =& MyTextSanitizer::getInstance(); // MyTextSanitizer object
+$myts = MyTextSanitizer::getInstance(); // MyTextSanitizer object
 
 if (!empty($_POST['submit']))
 	{
