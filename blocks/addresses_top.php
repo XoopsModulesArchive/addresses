@@ -13,7 +13,7 @@ function b_addresses_top_show($options)
 	{
 	global $xoopsDB;
 	$block = array();
-	$myts =& MyTextSanitizer::getInstance();
+	$myts = MyTextSanitizer::getInstance();
 	$result = $xoopsDB->query("SELECT aid, cid, title, date, hits FROM ".$xoopsDB->prefix("addresses_addresses")." WHERE status>0 ORDER BY ".$options[0]." DESC",$options[1],0);
 	while($myrow = $xoopsDB->fetchArray($result))
 		{

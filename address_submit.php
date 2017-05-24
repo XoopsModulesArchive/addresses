@@ -1,6 +1,6 @@
 <?php
 include "header.php";
-$myts =& MyTextSanitizer::getInstance();// MyTextSanitizer object
+$myts = MyTextSanitizer::getInstance();// MyTextSanitizer object
 include_once XOOPS_ROOT_PATH."/class/xoopstree.php";
 include_once XOOPS_ROOT_PATH."/class/module.errorhandler.php";
 include_once XOOPS_ROOT_PATH."/include/xoopscodes.php";

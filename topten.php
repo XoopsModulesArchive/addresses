@@ -1,6 +1,6 @@
 <?php
 include "header.php";
-$myts =& MyTextSanitizer::getInstance(); // MyTextSanitizer object
+$myts = MyTextSanitizer::getInstance(); // MyTextSanitizer object
 include_once XOOPS_ROOT_PATH."/class/xoopstree.php";
 $mytree = new XoopsTree($xoopsDB->prefix("addresses_cat"),"cid","pid");
 $xoopsOption['template_main'] = 'addresses_topten.html';
